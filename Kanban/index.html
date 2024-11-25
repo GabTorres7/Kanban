@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanban Board</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+     <!-- <script src="loop.js" defer></script> -->
+</head>
+<body>
+    <div class="container">
+        <div class="input-container">
+            <input type="text" id="entradaTarefa" placeholder="Digite uma nova tarefa">
+            <button id="botaoAdicionar">Adicionar Tarefa</button>
+        </div>
+
+        <div class="quadro-kanban">
+            
+            <div class="coluna aberto" data-status="aberto">
+                <div class="cabecalho-coluna">
+                    Em aberto
+                </div>
+                <div class="conteudo-coluna"></div> 
+            </div>
+
+            <div class="coluna negociacao" data-status="negociacao">
+                <div class="cabecalho-coluna">
+                    Bid (Negociação)
+                </div>
+                <div class="conteudo-coluna"></div>
+            </div>
+
+            <div class="coluna andamento" data-status="andamento">
+                <div class="cabecalho-coluna">
+                    Em andamento
+                </div>
+                <div class="conteudo-coluna"></div>
+            </div>
+
+            <div class="coluna entregue" data-status="entregue">
+                <div class="cabecalho-coluna">
+                    Entregue
+                </div>
+                <div class="conteudo-coluna"></div>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

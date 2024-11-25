@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.input-container {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#entradaTarefa {
+    padding: 10px;
+    width: 300px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#botaoAdicionar {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#botaoAdicionar:hover {
+    background-color: #45a049;
+}
+
+.quadro-kanban {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.coluna {
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    padding: 15px;
+    min-height: 400px;
+}
+
+.conteudo-coluna {
+    min-height: 100px;
+}
+
+.cabecalho-coluna {
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 4px;
+    color: #000;
+    font-weight: bold;
+    text-align: center;
+}
+
+.aberto .cabecalho-coluna {
+    background-color: #ffeb3b;
+}
+
+.negociacao .cabecalho-coluna {
+    background-color: #ff9800;
+}
+
+.andamento .cabecalho-coluna {
+    background-color: #90caf9;
+}
+
+.entregue .cabecalho-coluna {
+    background-color: #4caf50;
+}
+
+.cartao-tarefa {
+    background: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    cursor: move;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.cartao-tarefa.aberto {
+    border-left: 4px solid #ffeb3b;
+}
+
+.cartao-tarefa.negociacao {
+    border-left: 4px solid #ff9800;
+}
+
+.cartao-tarefa.andamento {
+    border-left: 4px solid #90caf9;
+}
+
+.cartao-tarefa.entregue {
+    border-left: 4px solid #4caf50;
+}
+
+.coluna.arrastando-sobre {
+    background-color: #e9ecef;
+}
+
+.cartao-tarefa:hover {
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
